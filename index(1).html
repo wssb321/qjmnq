@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <meta name="format-detection" content="telephone=no">
     <meta name="theme-color" content="#26a69a">
-    <title>学生服务平台 - 详情</title>
+    <title>学生服务平台</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         html, body {
@@ -53,13 +53,17 @@
             height: auto;
             max-width: 100%;
         }
+        .container {
+            position: relative;
+            width: 100%;
+        }
         .hidden-back-btn {
-            position: fixed;
-            top: 0;
+            position: absolute;
+            top: 15%;
             left: 0;
-            width: 100px;
-            height: 100px;
-            z-index: 999;
+            width: 100%;
+            height: 21%;
+            z-index: 10;
             cursor: pointer;
             background: transparent;
             border: 1px solid transparent;
@@ -67,11 +71,14 @@
     </style>
 </head>
 <body>
-<button class="hidden-back-btn" onclick="goBack()"></button>
-    <img src="02.jpg" alt="学生请假详情">
+    <div class="container">
+        <button class="hidden-back-btn" onclick="goBack()"></button>
+        <img src="01.jpg" alt="学生请假详情">
+    </div>
+
     <script>
         function goBack() {
-            window.location.href = 'index(1).html';
+            window.location.href = 'index.html';
         }
     </script>
 </body>
